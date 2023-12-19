@@ -1,6 +1,12 @@
 # Module-6-Challenge-Luper
 This repository will be utilized to hold the code used to satisfy the requirements of GWU Coding Bootcamp Module 6 Challenge.
 
+The mock-up demo example shown below was used as a reference for creating
+my own version of this Weather Dashboard application.
+
+MOCK-UP DEMO EXAMPLE:
+    ![Demo Example of the Weather Dashboard App](<Module_6_ Assignment_Demo_Mock-up.png>)
+
 USER STORY:
 AS A traveler
 I WANT to see the weather outlook for multiple cities
