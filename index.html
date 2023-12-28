@@ -20,6 +20,14 @@
         <section id="search-section">
             <!-- This div will contain the input field for the user to search different cities-->
             <div id="search-engine-container">
+                
+                <h2> Search for a City:</h2>
+                <!-- This creates a search bar area for the user with a placeholder text of "Search..." within
+                this search bar-->
+                <input type="text" placeholder="Search...">
+                <!-- This creates an interactive button for the search bar that initiates the search for the city
+                the user inputs into the search bar after the user clicks this submit button-->
+                <button type="submit">Search</button>
 
             </div>
 
@@ -51,7 +59,7 @@
 
     <!-- The following script calls the 5 Day Weather Forecast API-->
     <script src="api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}"> </script>
-    
+
     <!-- Added link to script.js file THE HREF WILL NEED TO BE ADJUSTED WHEN FOLDER IS CREATED THAT CONTAINS
     THE SCRIPT.JS FILE-->
     <script src="script.js>"></script>
