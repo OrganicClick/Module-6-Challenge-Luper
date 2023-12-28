@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <!-- Added link to style.css file THE HREF WILL NEED TO BE ADJUSTED WHEN FOLDER IS CREATED THAT CONTAINS
     THE CSS FILE-->
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
     <title>Weather Dashboard App</title>
 </head>
 <body>
@@ -48,5 +48,8 @@
 
         </div>
     </main>
+
+    <!-- The following script calls the 5 Day Weather Forecast API-->
+    <script src="api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}"> </script>
 </body>
 </html>
