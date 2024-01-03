@@ -28,7 +28,7 @@ var openWeatherKey ="78f50753dfedd5fed54761976c0adf1e";
 // the user clicks the "Search" button
 
 document.getElementById("searchButton").addEventListener("click",function() {
-    var cityInput = document.getElementById().value;
+    var cityInput = document.getElementById("userInput").value;
 
     //Added console.log for option of troubleshooting in console
 
