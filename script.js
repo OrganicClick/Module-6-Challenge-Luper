@@ -23,3 +23,14 @@ var openWeatherKey ="78f50753dfedd5fed54761976c0adf1e";
 // Create function/functions that takes the value(s) from the function
 // that gathers data from the Weather API, and pairs them to the
 // appropriate HTML elements
+
+// Creates a function that stores the city that a user searches for in the Search... bar when 
+// the user clicks the "Search" button
+
+document.getElementById("searchButton").addEventListener("click",function() {
+    var cityInput = document.getElementById().value;
+
+    //Added console.log for option of troubleshooting in console
+
+    console.log("Selected city:", cityInput);
+}
