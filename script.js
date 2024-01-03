@@ -33,4 +33,4 @@ document.getElementById("searchButton").addEventListener("click",function() {
     //Added console.log for option of troubleshooting in console
 
     console.log("Selected city:", cityInput);
-}
+});
