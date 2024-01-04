@@ -51,9 +51,19 @@ $(document).ready(function () {
     $("searchButton").on("click",function() {
         var cityInput = $("userInput").val().trim();
 
-        //Added console.log for option of troubleshooting in console
+        //Create conditional logic so that if the input is not an empty string, the nested code
+        // will execute
+        if (userInput !== '') {
 
-        console.log("Selected city:", cityInput);
+            // Clear the input field
+            $('#userInput').val('');
+
+            // Add the searched city to the search history
+            $('#searchResultList').append(`<li>${userInput}</li>`);
+
+            // Fetch weather data for the searched city
+            getWeatherData(userInput);
+}
     });
 
 
