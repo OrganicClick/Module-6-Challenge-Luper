@@ -48,8 +48,8 @@ $(document).ready(function () {
 
     // Creates an event listener for the search button
 
-    $("searchButton").on("click",function() {
-        var cityInput = $("userInput").val().trim();
+    $("#searchButton").on("click",function() {
+        var userInput = $("#userInput").val().trim();
 
         //Create conditional logic so that if the input is not an empty string, the nested code
         // will execute
