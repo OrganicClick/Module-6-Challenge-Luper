@@ -14,6 +14,21 @@ $(document).ready(function () {
 
         //OpenWeatherMap API URL for 5-day forecast
         const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
+
+           // Use AJAX to fetch current weather data, data type utilized JSON
+           $.ajax({
+            url: currentWeatherURL,
+            method: 'GET',
+            dataType: 'json',
+            success: function (currentData) {
+                // Logs current weather data
+                console.log(currentData);
+            },
+                // Logs an error message if there is an error
+            error: function (error) {
+                console.error('Error fetching current weather data:', error);
+            }
+        });
     }
 
 
