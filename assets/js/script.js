@@ -63,13 +63,13 @@ $(document).ready(function () {
 
             // Fetch weather data for the searched city
             getWeatherData(userInput);
-}
+        }
     });
 
 
 
 
-}
+//}
 
 
 //---- NOTES FOR FUNCTION CREATION ---- //
@@ -91,4 +91,4 @@ $(document).ready(function () {
 // that gathers data from the Weather API, and pairs them to the
 // appropriate HTML elements
 
-
+)
