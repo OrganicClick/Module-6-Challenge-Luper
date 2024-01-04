@@ -80,7 +80,7 @@ $(document).ready(function () {
         var date = new Date(data.dt * 1000)
 
         // Formats the date into the desired format e.g. October 10, 2023
-        var formattedDate = date.toLocaleDateString('en-US-', {
+        var formattedDate = date.toLocaleDateString('en-US', {
             month: 'long',
             day: 'numeric',
             year: 'numeric'
@@ -97,13 +97,9 @@ $(document).ready(function () {
             <li>${celsiusTemperature}°C</li>
             <li>${data.wind.speed} m/s</li>
             <li>${data.main.humidity}%</li>
-            <li>${data.weather[0].icon}</li>`
+            <li><img src="https://openweathermap.org/img/wn/${data.weather[0].icon}.png" alt="Weather Icon"></li>`
             );
 
             
     } 
 });
-
-
-
-
