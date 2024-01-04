@@ -66,10 +66,14 @@ $(document).ready(function () {
         }
     });
 
+     // Event listener for dynamically generated list items
+     $('#searchResultList').on('click', 'li', function () {
+        const selectedCity = $(this).text();
+        // Fetch weather data for the selected city
+        getWeatherData(selectedCity);
+    });
 
-
-
-//}
+});
 
 
 //---- NOTES FOR FUNCTION CREATION ---- //
@@ -91,4 +95,3 @@ $(document).ready(function () {
 // that gathers data from the Weather API, and pairs them to the
 // appropriate HTML elements
 
-)
