@@ -28,7 +28,22 @@ $(document).ready(function () {
             error: function (error) {
                 console.error('Error fetching current weather data:', error);
             }
-        });
+         });
+
+            // Use AJAX to fetch 5-day forecast data, data type utilized JSON
+            $.ajax({
+                url: forecastURL,
+                method: 'GET',
+                dataType: 'json',
+                success: function (forecastData) {
+                    // Logs 5-day forecast data
+                    console.log(forecastData);
+                },
+                    // Logs an error message if there is an error
+                error: function (error) {
+                    console.error('Error fetching 5-day forecast data:', error);
+                }
+            });
     }
 
 
