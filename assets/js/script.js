@@ -21,8 +21,8 @@ $(document).ready(function () {
             method: 'GET',
             dataType: 'json',
             success: function (currentData) {
-                // Logs current weather data
-                console.log(currentData);
+                // Runs function to update current weather data
+                updateCurrentWeather(currentData);
             },
                 // Logs an error message if there is an error
             error: function (error) {
@@ -73,25 +73,13 @@ $(document).ready(function () {
         getWeatherData(selectedCity);
     });
 
+    //Created a function that pulls relevant data from the OpenWeatherMap API and displays them individually as list items in the currentConditionsList
+    function updateCurrentWeather(data) {
+        // Update HTML elements with current weather data
+        $('#currentConditionsList').html(`<li>${data.name}</li><li>${data.main.temp}°C</li><li>${data.wind.speed} m/s</li><li>${data.main.humidity}%</li>`);
+    } 
 });
 
 
-//---- NOTES FOR FUNCTION CREATION ---- //
 
-// Create an array, each index number associated with today, and then 
-// each individual day after today in a 5-day forecast
-//
-// [0] = today, [1] = tomorrow, ... etc.
-
-// Create function/logic that pairs each element in the array to
-// the appropriate HTML element, using the HTML element ID's
-
-// Create a function/functions which call data from the Weather API,
-// gathering the relevant conditions as laid out in the HTML file
-    // May need to parse 5-day forecast out, then apply each parsed
-    // value to the appropriate spot in the array
-
-// Create function/functions that takes the value(s) from the function
-// that gathers data from the Weather API, and pairs them to the
-// appropriate HTML elements
 
