@@ -52,16 +52,33 @@ main {
     margin-top: 2rem;
 }
 
+/* Made additional changes to currentConditionsList items for better readability
+and felt bad that future conditions weren't there*/
 #currentConditionsList {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 #currentConditionsList li {
-    margin-bottom: 0.5rem;
+    margin: 0.5rem;
 }
 
 #currentConditionsList img {
     max-width: 100px;
     max-height: 100px;
+    margin: 0.5rem;
+}
+
+#currentConditionsList .city-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#currentConditionsList .date {
+    font-size: 1rem;
+    color: #555;
 }
