@@ -75,8 +75,18 @@ $(document).ready(function () {
 
     //Created a function that pulls relevant data from the OpenWeatherMap API and displays them individually as list items in the currentConditionsList
     function updateCurrentWeather(data) {
-        // Update HTML elements with current weather data
-        $('#currentConditionsList').html(`<li>${data.name}</li><li>${data.main.temp}°C</li><li>${data.wind.speed} m/s</li><li>${data.main.humidity}%</li>`);
+        // Update HTML elements with current weather data LINES WERE ADJUSTED FOR READABILITY
+        $('#currentConditionsList').html(
+            `<li>${data.name}</li>
+            <li>${data.main.temp}°C</li>
+            <li>${data.wind.speed} m/s</li>
+            <li>${data.main.humidity}%</li>
+            <li>${data.weather[0].icon}</li>`
+            );
+
+            //Convert temperature from Kelvin to Celsius
+            var kelvinTemperature = data.main.temp;
+            var celsiusTemperature = kelvinTemperature - 273.15;
     } 
 });
 
