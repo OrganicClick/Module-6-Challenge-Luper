@@ -76,8 +76,15 @@ $(document).ready(function () {
     //Created a function that pulls relevant data from the OpenWeatherMap API and displays them individually as list items in the currentConditionsList
     function updateCurrentWeather(data) {
 
-        //
-        
+        // Extracts relevant date data and also converts the Unix timestamp to date object
+        var date = new Date(data.dt * 1000)
+
+        // Formats the date into the desired format e.g. October 10, 2023
+        var formattedDate = date.toLocaleDateString('en-US-', {
+            month: 'long',
+            day: 'numeric',
+            year: 'numeric'
+        });
 
         //Convert temperature from Kelvin to Celsius
         var kelvinTemperature = data.main.temp;
