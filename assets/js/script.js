@@ -44,9 +44,17 @@ $(document).ready(function () {
                     console.error('Error fetching 5-day forecast data:', error);
                 }
             });
-    }
+        }
 
+    // Creates an event listener for the search button
 
+    $("searchButton").on("click",function() {
+        var cityInput = $("userInput").val().trim();
+
+        //Added console.log for option of troubleshooting in console
+
+        console.log("Selected city:", cityInput);
+    });
 
 
 
@@ -73,13 +81,4 @@ $(document).ready(function () {
 // that gathers data from the Weather API, and pairs them to the
 // appropriate HTML elements
 
-// Creates a function that stores the city that a user searches for in the Search... bar when 
-// the user clicks the "Search" button
 
-document.getElementById("searchButton").addEventListener("click",function() {
-    var cityInput = document.getElementById("userInput").value;
-
-    //Added console.log for option of troubleshooting in console
-
-    console.log("Selected city:", cityInput);
-});
