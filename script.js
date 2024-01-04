@@ -1,5 +1,5 @@
 //This variable stores the OpenWeather API Key
-const openWeatherKey ="78f50753dfedd5fed54761976c0adf1e";
+const apiKey ="78f50753dfedd5fed54761976c0adf1e";
 
 
 // WRAP LOGIC/FUNCTIONS SO THAT FUNCTIONS DON'T RUN UNTIL
