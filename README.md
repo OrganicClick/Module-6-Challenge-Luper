@@ -11,7 +11,7 @@ DEPLOYED SITE:
     https://organicclick.github.io/Module-6-Challenge-Luper/
 
 SCREENSHOT OF SITE:
-
+    ![Screenshot of Weather Dashboard app site](<Weather Dashboard Screenshot.png>)
 
 USER STORY:
 AS A traveler
