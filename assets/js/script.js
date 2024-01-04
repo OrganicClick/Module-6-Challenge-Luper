@@ -1,12 +1,20 @@
-//This variable stores the OpenWeather API Key
+//This variable stores the OpenWeatherMap API Key
 const apiKey ="78f50753dfedd5fed54761976c0adf1e";
 
 // WRAP LOGIC/FUNCTIONS SO THAT FUNCTIONS DON'T RUN UNTIL
 // AFTER THE DOM HAS ALREADY FINISHED RENDERING
 
 $(document).ready(function () {
+    
+    //Creates a function that fetches weather data based on city name searched by user
+    function getWeatherData(city) {
 
+        //OpenWeatherMap API URL for current weather
+        const currentWeatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
+        //OpenWeatherMap API URL for 5-day forecast
+        const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
+    }
 
 
 
